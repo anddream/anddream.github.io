@@ -7,8 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 </head>
+
+
 <body>
-	<div id="header">
+<div id="overlay"> </div>
+<div id="header">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="152.791px" height="134.883px" viewBox="0 0 152.791 134.883" enable-background="new 0 0 152.791 134.883"
 		 xml:space="preserve">
@@ -20,30 +23,39 @@
 		<circle class="logo" id="circle" fill="none" stroke="#78C2C4" stroke-miterlimit="10" cx="17.711" cy="65.385" r="9.476"/>
 		</svg>
 
+
 	</div>
+
+
+	<nav class="navbar">
+		<ul id="navbar-ul">
+			<li class="nav-item"><a href="#About">About</a></li>
+			<li class="nav-item"><a href="#Resume">Resume</a></li>
+			<li class="nav-item"><a href="#Work">Work</a></li>
+		</ul>
+	</nav>
+
+<!-- WINDOWS -->
 
 
 	<div class="window" id="home">
 		<div class="content-container">
 			<img id="barcelona" src="assets/img/bw.jpg">
-			<div id="home-title">Hey I'm Andrea.</div>
+			<div id="home-title">Hey I'm Andrea.
+			</div>
 		</div>
+
 		<div class="scroll-button"> 
 		</div>
+
+
 	</div>
 
 
-
-	<div id="nav">
-		<div id="navbar">
-			<div class="nav-item">About</div>
-			<div class="nav-item">Resume</div>
-			<div class="nav-item">Work</div>
-		</div>
-	</div>
 
 
 	<div class="window" id="about">
+		<a id="About" class="smooth"></a>
 		<div class="content-container">
 			<div class="about" id="about-title">About </div>
 			<div class="about" id="about-textbox">Lorem ipsum dolor sit amet, vivamus ac euismod nisl id lacinia aliquet, a mi eleifend, amet enim, donec neque est, ante vestibulum aliquam praesent eros. Venenatis vel dui libero vehicula, dis amet. Volutpat pede, curabitur lectus, morbi dictum. Lacus laoreet a nonummy imperdiet pede, erat consequat mi amet, et mi fringilla at nulla, ac nam mauris vitae. Morbi arcu ex at donec curabitur, fermentum fermentum potenti nullam. Nam orci, aliquam est, commodo consequat ligula lorem dolor et litora. Sed scelerisque donec massa porta, pede sit rutrum eget ridiculus donec integer, libero elementum adipiscing, arcu est turpis.</div>
@@ -51,26 +63,36 @@
 	</div>
 
 
-	<div class="window" id="resume">
-		<div class="content-container">
-			<div class="resume-text">
-				Download
+	<div class="window" id="resume" >
+		<a id="Resume" class="smooth"></a>
+			<div class="content-container">
+				<div id="one" class="resume-text">
+					View
+				</div>
+				<div id="two" class="resume-text">
+					My
+				</div>
+				<div id="three" class="resume-text">
+					Resume.
+				</div>
+				<div id="click">
+					(click image below)
+				</div>
 			</div>
-			<div class="resume-text">
-				My
+			<div id="crop">
+					<div id="crop1">
+					<img id="resume-crop" src="assets/img/resume-crop.jpg">
+					</div>
 			</div>
-			<div class="resume-text">
-				Resume
-			</div>
-			<div class="resume-text">
-				Here
-			</div>
+			<div class="resume">
+				<img src="assets/img/resume.jpg">
 			</div>
 		</div>
 
 
 
-	<div class="window" id="portfolio">
+	<div class="window" id="work">
+		<a id="Work" class="smooth"></a>
 		<div class="content-container">
 			<div id="work-nav">
 				<div id="work-title">Work</div>
@@ -83,5 +105,6 @@
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>

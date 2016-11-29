@@ -251,7 +251,7 @@ body{
 #resume-crop {
 	width: 400px;
 	height: auto;
-	z-index: 20;
+	z-index: 100;
 	margin: 0px;
 	padding: 0px;
 	opacity: .7;

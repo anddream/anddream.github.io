@@ -24,4 +24,42 @@ $("#overlay").click(function() {
 });
 
 
+$("#ill").click(function() {
+	$("#illus").fadeIn(900);
+	$("#Photoshop").fadeOut(900);
+	$("#Instagram").fadeOut(900);
+});
+
+$("#photo").click(function() {
+	$("#Photoshop").fadeIn(900);
+	$("#illus").fadeOut(900);
+	$("#Instagram").fadeOut(900);
+});
+
+$("#insta").click(function() {
+	$("#Instagram").fadeIn(900);
+	$("#Photoshop").fadeOut(900);
+	$("#illus").fadeOut(900);
+});
+
+
+//-- Javascript plug-ins-----////
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+
 });

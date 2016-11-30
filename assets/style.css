@@ -10,6 +10,7 @@ body{
 
 .window {
 	position: relative;
+	margin: 0;
 	width: 100vw;
 	height: 100vh;
 	background-color: #F2F2F2;
@@ -35,6 +36,29 @@ body{
 	display: none;
 	cursor: pointer;
 
+}
+
+#instruction {
+	position: fixed;
+	z-index: 300;
+	width: 300px;
+	font-size: 12px;
+	line-height: 2;
+	animation: instruction 4s ease;
+	animation-iteration-count: 3;
+	opacity: 0;
+	margin-top: 25px;
+	margin-left: 90px;
+	font-weight: bold;
+
+}
+
+@keyframes instruction {
+	0% {opacity: .1;}
+	25% {opacity: .5;}
+	50% {opacity: 1;}
+	75% {opacity: .5;}
+	100% {display: .2;}
 }
 
 
@@ -100,7 +124,7 @@ body{
 	width: 90px;
 	height: 100%;
 	z-index: 100;
-	background: rgba(242, 242, 242, .1);
+	background: rgba(242, 242, 242, .0);
 
 	-webkit-transform: translateX(-90px);
 	-webkit-transition: all 0.5s;
@@ -136,15 +160,23 @@ body{
 
 #home-title {
 	position: absolute;
-	width: 500px;
+	width: 550px;
 	text-align: right;
 	top: 50%;
 	transfor: translateY(-50%);
-	font-size: 40px;
+	font-size: 50px;
 	color: #78C2C4;
 	font-weight: bold;
+	animation: drop 5s ease;
 
 }
+
+
+@keyframes drop {
+	0% {transform: translateY(-500px);}
+	100% {transform: translateY( 0px);}
+}
+
 
 /*-------------------------------*/
 
@@ -169,6 +201,10 @@ body{
 
 #about-textbox {
 	color: #F2F2F2;
+}
+
+.about {
+	text-align: right;
 }
 
 
@@ -293,14 +329,56 @@ body{
 	position: absolute;
 }
 
-.about {
+
+#work-content {
+	border: solid red;
+	position: relative;
+	height: 80%;
+	bottom: 0;
+}
+
+#work-nav {
+	width: 100%;
+	position: relative;
+	list-style-type: none;
+
+}
+
+.work-item {
+	margin-left: 20px;
+	float: right;
+	cursor: pointer;
+	transition: 1s;
+	margin-right: 5px;
+}
+
+.work-item:hover {
+	color: #6885A6;
+	transform: translateY(-3px);
+
+}
+
+
+.photo-grid {
+	overflow: scroll;
+	border: solid;
+	width: 100%;
+	height: 75%;
+	position: absolute;
+	bottom: 0;
+	display: none;	
+}
+
+
+#work-title {
+	font-weight: bold;
+	font-size: 50px;
+	color: #6885A6;
+	padding: 0px;
+	height: 65px;
 	text-align: right;
 }
 
-
-#photo-grid {
-	float: right;
-}
 
 /*-------------------------------*/
 

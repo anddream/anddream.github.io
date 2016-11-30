@@ -331,7 +331,6 @@ body{
 
 
 #work-content {
-	border: solid red;
 	position: relative;
 	height: 80%;
 	bottom: 0;
@@ -361,7 +360,6 @@ body{
 
 .photo-grid {
 	overflow: scroll;
-	border: solid;
 	width: 100%;
 	height: 75%;
 	position: absolute;
@@ -377,6 +375,14 @@ body{
 	padding: 0px;
 	height: 65px;
 	text-align: right;
+}
+
+.grid-item { 
+	width: 200px; 
+}
+
+.grid-item--width2 { 
+	width: 400px; 
 }
 
 

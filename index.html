@@ -4,6 +4,7 @@
 	<title></title>
 	<script src="assets/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="assets/script.js"></script>
+	<script src="/assets/masonry.pkgd.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 </head>
@@ -30,6 +31,7 @@
 
 	<nav class="navbar">
 		<ul id="navbar-ul">
+			<li class="nav-item"><a href="#Home">Home</a></li>
 			<li class="nav-item"><a href="#About">About</a></li>
 			<li class="nav-item"><a href="#Resume">Resume</a></li>
 			<li class="nav-item"><a href="#Work">Work</a></li>
@@ -40,6 +42,7 @@
 
 
 	<div class="window" id="home">
+		<a id="Home" class="smooth"></a>
 		<div class="content-container">
 			<img id="barcelona" src="assets/img/bw.jpg">
 			<div id="home-title">Hey I'm Andrea.
@@ -101,10 +104,22 @@
 				<li id="photo"class="work-item">Photoshop</li>
 				<li id="insta" class="work-item">Instagram</li>
 			</nav>
+
 			<div  id="illus" class="photo-grid">
-			illustrator
-	
+
+				<div class="grid">
+				  <div class="grid-item">
+				  	<img src="assets/img/child.jpg">
+				  </div>
+				  <div class="grid-item grid-item--width2">
+				  	<img src="assets/img/dublin.jpg">
+				  </div>
+				  <div class="grid-item">...</div>
+				  ...
+				</div>
 			</div>
+
+
 
 			<div id="Photoshop" class="photo-grid" >
 			photoshop
@@ -112,7 +127,27 @@
 			</div>
 
 			<div id="Instagram" class="photo-grid">
-			instagram
+			
+				<div class="grid">
+				  <div class="grid-item">
+				  		<img src="assets/img/child.jpg">
+				  </div>
+				  <div class="grid-item grid-item--width2">
+				  		<img src="assets/img/dublin.jpg">
+				  </div>
+				  <div class="grid-item">
+				  		<img src="assets/img/barcelonaguell.jpg">
+				  </div>
+				  <div class="grid-item">
+				  		<img src="assets/img/child.jpg">
+				  </div>
+				  <div class="grid-item grid-item--width2">
+				  		<img src="assets/img/dublin.jpg">
+				  </div>
+				  <div class="grid-item">
+				  		<img src="assets/img/barcelonaguell.jpg">
+				  </div>				  
+				</div>
 	
 			</div> 
 
